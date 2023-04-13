@@ -12,8 +12,9 @@ import (
 **/
 func renderIndex(c *fiber.Ctx) error {
 	return c.Render("index", fiber.Map{
-		"Title":             "Liam's travel blog!",
-		"India-Description": "Let's visit India",
+
+		"Title":             "Moh's new travel blog!",
+		"India-Description": "Let's visit India again",
 		"Dubai-Description": "Let's visit Dubai",
 		"USA-Description":   "Let's visit USA",
 	}, "layouts/main")
