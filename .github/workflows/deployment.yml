@@ -2,14 +2,14 @@ name: Build a Docker image and push it to ACR
 
 on:
   push: 
-    branches: [main]
+    branches: [main, feature1]
 
   workflow_dispatch:
 
 env:
   TAG: v1
-  SERVER: mcoderegistry.azurecr.io
-  IMAGE: devops-container
+  SERVER: nomadsregistry.azurecr.io
+  IMAGE: mhdevops-container
 
 jobs:
   build:
